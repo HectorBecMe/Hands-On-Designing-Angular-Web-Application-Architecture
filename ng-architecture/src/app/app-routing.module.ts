@@ -4,7 +4,8 @@ import { TodosComponent } from './todos/todos.component';
 
 
 const routes: Routes = [
-  {path: 'todos', component: TodosComponent},
+  { path: '', redirectTo: '/todos', pathMatch: 'full' },
+  { path: 'todos', component: TodosComponent },
   { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) }
 ];
 

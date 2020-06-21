@@ -1,10 +1,20 @@
-<h1>Angular Architecture</h1>
+<!-- <h1>Angular Architecture</h1> -->
 
 <!-- <app-todos></app-todos> -->
 
-<ul>
+<!-- <ul>
   <li routerLink='todos'>Todos</li>
   <li routerLink='users'>Users</li>
-</ul>
+</ul> -->
+
+<mat-toolbar color="primary">
+  <span [routerLink]="['/']">Angular architecture</span>
+  <span class="spacer"></span>
+  <div>
+    <button mat-button [routerLink]="['/']">Home</button>
+    <button mat-button [routerLink]="['/todos']">Todos</button>
+    <button mat-button [routerLink]="['/users']">User</button>
+  </div>
+</mat-toolbar>
 
 <router-outlet></router-outlet>
