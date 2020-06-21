@@ -9,7 +9,8 @@ import { TodosService } from './todos.service';
 export class TodosComponent implements OnInit {
 
   title = 'Todos';
-  todos = ['Array Todo 1', 'Array Todo 2' , 'Array Todo 3'];
+  // todos = ['Array Todo 1', 'Array Todo 2' , 'Array Todo 3'];
+  todos: any;
 
   constructor(
     private todosService: TodosService) {
